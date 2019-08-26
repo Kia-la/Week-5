@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+  </tr>
+       <% for(let i =0 ;i < customers.lenghth; i++){%
+        
+        <tr>
+          <td>
+             <%=customers[i].firstname %>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+             <%=customers[i].lastname %>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+             <%=customers[i].email %>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+             <%=customers[i].phoneNumber %>
+          </td>
+        </tr>
+      }
+    </tr>
+</table>
+
+</body>
+</html>
